@@ -18,12 +18,11 @@ export class LoginComponent implements OnInit {
   };
 
   constructor(
-    private router: Router,
-    private authenticationService: AuthenticationService
+  private router: Router,
+  private authenticationService: AuthenticationService
   ) { }
 
   ngOnInit() {}
-  
   public onLoginSubmit(): void {
     this.formError = '';
     if (!this.credentials.email || !this.credentials.password) {
